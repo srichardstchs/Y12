@@ -1,0 +1,140 @@
+Console.WriteLine("Enter a whole number between 0 and 255");
+int num = Convert.ToInt32(Console.ReadLine());
+string binVal = "";
+if (num >= 128)
+{
+    num = num - 128;
+    binVal = "1";
+}
+else
+{ 
+    binVal = "0"; 
+}
+if (num >= 64)
+{
+    num = num - 64;
+    binVal = binVal + "1";
+}
+else
+{
+    binVal = binVal + "0";
+}
+if (num >= 32)
+{
+    num = num - 32;
+    binVal = binVal + "1";
+}
+else
+{
+    binVal = binVal + "0";
+}
+if (num >= 16)
+{
+    num = num - 16;
+    binVal = binVal + "1";
+}
+else
+{
+    binVal = binVal + "0";
+}
+if (num >= 8)
+{
+    num = num - 8;
+    binVal = binVal + "1";
+}
+else
+{
+    binVal = binVal + "0";
+}
+if (num >= 4)
+{
+    num = num - 4;
+    binVal = binVal + "1";
+}
+else
+{
+    binVal = binVal + "0";
+}
+if (num >= 2)
+{
+    num = num - 2;
+    binVal = binVal + "1";
+}
+else
+{
+    binVal = binVal + "0";
+}
+if (num == 1)
+{
+    binVal = binVal + "1";
+}
+else
+{
+    binVal = binVal + "0";
+}
+String leftBinVal = binVal.Substring(0, 4);
+string rightBinVal = binVal.Substring(4, 4);
+if (leftBinVal == "0000")
+{
+    Console.Write("0");
+}
+else if (leftBinVal == "0001")
+{
+    Console.Write("1");
+}
+else if (leftBinVal == "0010")
+{
+    Console.Write("2");
+}
+else if (leftBinVal == "0011")
+{
+    Console.Write("3");
+}
+else if (leftBinVal == "0100")
+{
+    Console.Write("4");
+}
+else if (leftBinVal == "0101")
+{
+    Console.Write("5");
+}
+else if (leftBinVal == "0110")
+{
+    Console.Write("6");
+}
+else if (leftBinVal == "0111")
+{
+    Console.Write("7");
+}
+else if (leftBinVal == "1000")
+{
+    Console.Write("8");
+}
+else if (leftBinVal == "1001")
+{
+    Console.Write("9");
+}
+else if (leftBinVal == "1010")
+{
+    Console.Write("a");
+}
+else if (leftBinVal == "1011")
+{
+    Console.Write("b");
+}
+else if (leftBinVal == "1100")
+{
+    Console.Write("c");
+}
+else if (leftBinVal == "1101")
+{
+    Console.Write("d");
+}
+else if (leftBinVal == "1110")
+{
+    Console.Write("e");
+}
+else if (leftBinVal == "1111")
+{
+    Console.Write("f");
+}
